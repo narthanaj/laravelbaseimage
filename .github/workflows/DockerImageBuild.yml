@@ -3,7 +3,7 @@ name: Build and Push laravel Image to Docker Hub
 env:
   IMAGE_NAME: laravelbaseimage
   DOCKERFILE_PATH: Dockerfile
-  DOCKER_HUB_USERNAME: nathanaj 
+  DOCKER_HUB_USERNAME: narthanaj 
   DOCKER_HUB_REPOSITORY: narthanaj/laravelbaseimage
 
 on: [push, workflow_dispatch]
