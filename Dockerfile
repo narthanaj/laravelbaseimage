@@ -4,6 +4,12 @@
 # Use Ubuntu 22.04 as the base image
 FROM ubuntu:22.04
 
+# Avoid interactive prompts from dpkg
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Set the timezone to Asia/Colombo
+
+
 # Set a working directory
 WORKDIR /var/www/html
 
@@ -12,6 +18,7 @@ RUN apt-get update -y && apt-get install -y \
     software-properties-common \
     curl \
     zip \
+    tzdata \
     unzip \
     git \
     && add-apt-repository ppa:ondrej/php -y \
