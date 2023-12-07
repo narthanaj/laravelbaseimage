@@ -1,5 +1,4 @@
 # Dockerfile to create a base image with Ubuntu 22.04 and PHP
-# Filename: Dockerfile-base
 
 # Use Ubuntu 22.04 as the base image
 FROM ubuntu:22.04
